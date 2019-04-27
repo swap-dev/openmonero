@@ -1,14 +1,41 @@
 <!DOCTYPE html>
-<html ng-app="thinWallet">
-
-<head lang="en">
+<html ng-app="thinWallet" lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="format-detection" content="telephone=no">
-
-    <title ng-bind="$root.title + ' - Swap'">Swap</title>
-
+    <title ng-bind="$root.title + ' - Swap'">Swap | Web Wallet</title>
+    <!-- OpenGraph SEO meta tags -->
+	<meta name="description" content="A community developed cryptocurrency striving for robust privacy, ecosystem fairness, full transparency, secure network, and ease of use.">
+	<meta content="wallet, xwp, swap, coin, cryptonote, mimblewimble, cuckoo, cuckaroo, blockchain, crypto-currency" name="keywords">
+	<meta content="https://swap.fyi/images/logo/swap-logo-banner.png" property="og:image">
+	<meta content="Swap | Web Wallet" property="og:title">
+	<meta content="website" property="og:type">
+	<!-- TwitterCard meta tags -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@_realSwap">
+	<meta name="twitter:title" content="Swap | Web Wallet">
+	<meta name="twitter:description" content="A community developed cryptocurrency striving for robust privacy, ecosystem fairness, full transparency, secure network, and ease of use.">
+	<meta name="twitter:image" content="https://swap.fyi/images/logo/swap-logo-banner.png">
+    <!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- Font Awesome -->
+	<!-- <link rel="stylesheet" href="fa/css/all.css"> -->
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-6jHF7Z3XI3fF4XZixAuSu0gGKrXwoX/w3uFPxC56OtjChio7wtTGJWRW53Nhx6Ev" crossorigin="anonymous">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-5720377-4"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-5720377-4');
+	</script>
     <link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css"/>
     <link href="bower_components/fontawesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
     <link href="css/print.css" media="print" rel="stylesheet" type="text/css"/>
@@ -18,13 +45,11 @@
     <link href="css_2/normalize.css" rel="stylesheet"/>
     <link href="css_2/webflow.css" rel="stylesheet"/>
     <link href="css_2/moncrypt.webflow.css" rel="stylesheet"/>
-
     <style>
         .move-text-div {
             word-wrap: break-word;
         }
     </style>
-
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <!--<script src="bower_components/fastclick/lib/fastclick.js"></script>-->
     <script src="bower_components/angular/angular.min.js"></script>
