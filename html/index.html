@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="format-detection" content="telephone=no">
-    <title ng-bind="$root.title + ' | Swap Web Wallet'">Swap Web Wallet</title>
+    <title ng-bind="'Swap Web Wallet | ' + $root.title">Swap Web Wallet</title>
     <!-- OpenGraph SEO meta tags -->
 	<meta name="description" content="A community developed cryptocurrency striving for robust privacy, ecosystem fairness, full transparency, secure network, and ease of use.">
 	<meta content="wallet, xwp, swap, coin, cryptonote, mimblewimble, cuckoo, cuckaroo, blockchain, crypto-currency" name="keywords">
@@ -126,13 +126,13 @@
                     <div class="w-icon-dropdown-toggle arrow-icon-style"></div>
                 </div>
                 <nav class="w-dropdown-list dropdown-rounded">
-                    <a class="w-dropdown-link dropdown-styling pointer top" data-ix="display-login-key-review" show-modal="review-login-key">Review Login Key</a>
+                    <a class="w-dropdown-link dropdown-styling pointer top" data-ix="display-login-key-review" show-modal="review-login-key"><i class="far fa-key fa-fw"></i>&ensp;Review Login Key</a>
                     <!--<a class="w-dropdown-link dropdown-styling pointer" show-modal="import-wallet" ng-hide="account_scan_start_height == 0">Import Transactions</a>-->
-                    <a class="w-dropdown-link dropdown-styling pointer" show-modal="imported-account">Import Transactions</a>
-                    <a class="w-dropdown-link dropdown-styling pointer bottom" data-ix="display-review-account" show-modal="review-account-details">Account Details</a>
+                    <a class="w-dropdown-link dropdown-styling pointer" show-modal="imported-account"><i class="far fa-file-import fa-fw"></i>&ensp;Import Transactions</a>
+                    <a class="w-dropdown-link dropdown-styling pointer bottom" data-ix="display-review-account" show-modal="review-account-details"><i class="fas fa-file-user fa-fw"></i>&ensp;Account Details</a>
                 </nav>
             </div>
-            <a class="w-nav-link nav-link" ng-show="loggedIn()" ng-class="currentPage('-')" ng-click="logout()" href="#!/">Logout</a>
+            <a class="w-nav-link nav-link" ng-show="loggedIn()" ng-class="currentPage('-')" ng-click="logout()" href="#!/">Logout&ensp;<i class="fas fa-sign-out-alt"></i></a>
         </nav>
         <button class="w-nav-button menu-btn menu-btn-toggler">
             <span class="w-icon-nav-menu"></span>
