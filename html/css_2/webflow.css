@@ -22,7 +22,7 @@
 .w-icon-slider-left:before {
   content: "\e601";
 }
-.w-icon-nav-menu:before {
+.www-icon-nav-menu:before {
   content: "\e602";
 }
 .w-icon-arrow-down:before,
@@ -40,8 +40,8 @@ html {
 body {
   margin: 0;
   min-height: 100%;
-  background-color: #fff;
-  color: #333;
+  background-color: #151933;
+  color: #a3acde;
 }
 img {
   max-width: 100%;
@@ -160,27 +160,28 @@ label {
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.428571429;
-  color: #555555;
+  color: #a3acde;
   vertical-align: middle;
-  background-color: #ffffff;
-  border: 1px solid #cccccc;
+  background-color: #1d244a;
+  border: 2px solid #2e3880;
+
 }
 .w-input:-moz-placeholder,
 .w-select:-moz-placeholder {
-  color: #999999;
+  color: #666666;
 }
 .w-input::-moz-placeholder,
 .w-select::-moz-placeholder {
-  color: #999999;
+  color: #666666;
   opacity: 1;
 }
 .w-input:-ms-input-placeholder,
 .w-select:-ms-input-placeholder {
-  color: #999999;
+  color: #666666;
 }
 .w-input::-webkit-input-placeholder,
 .w-select::-webkit-input-placeholder {
-  color: #999999;
+  color: #666666;
 }
 .w-input:focus,
 .w-select:focus {
@@ -1453,14 +1454,22 @@ textarea.w-select {
   clear: both;
 }
 .w-nav-brand {
-  position: relative;
-  float: left;
+  display:inline-block;
+  width: 50%;
+  position:relative;
+  float:left;
   text-decoration: none;
-  color: #222;
+  color: #fff;
+}
+.swap-hero-logo {
+  max-width: 15rem;
+  height: auto;
+  margin: 1rem 0;
+  padding: 0;
 }
 .w-nav-link {
   position: relative;
-  display: inline-block;
+  display: inline;
   vertical-align: top;
   text-decoration: none;
   color: #222;
@@ -1473,8 +1482,11 @@ textarea.w-select {
   color: #339ce1;
 }
 .w-nav-menu {
-  position: relative;
-  float: right;
+  display:inline-block;
+  width: 50%;
+  float:right;
+  text-align:right;
+  position:relative;
 }
 .w--nav-menu-open {
   display: block !important;
@@ -1482,9 +1494,10 @@ textarea.w-select {
   top: 100%;
   left: 0;
   right: 0;
-  background: #999;
-  text-align: center;
+  background: #151934;
+  text-align: left;
   overflow: visible;
+  width: 100%;
   min-width: 200px;
 }
 .w--nav-link-open {
@@ -1522,8 +1535,8 @@ textarea.w-select {
   top: 0;
 }
 .w-nav-button {
-  position: relative;
-  float: right;
+  position: absolute;
+  right:1rem;
   padding: 18px;
   font-size: 24px;
   display: none;
@@ -1536,7 +1549,7 @@ textarea.w-select {
   user-select: none;
 }
 .w-nav-button.w--open {
-  background-color: #999;
+  background-color: none;
   color: white;
 }
 .w-nav[data-collapse="all"] .w-nav-menu {
@@ -1587,17 +1600,10 @@ textarea.w-select {
   position: relative;
 }
 .w-tab-link {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  text-decoration: none;
-  padding: 8px 30px;
-  text-align: left;
-  cursor: pointer;
-  background-color: #E8E8E8;
+  margin:.5rem .5rem;
 }
 .w-tab-link.w--current {
-  background-color: #BCD3F3;
+  
 }
 .w-tab-content {
   position: relative;
