@@ -1064,7 +1064,7 @@ textarea.w-select {
   position: relative;
   vertical-align: top;
   text-decoration: none;
-  color: #222;
+  color: #a3acde;
   padding: 20px;
   text-align: left;
   margin-left: auto;
@@ -1095,7 +1095,7 @@ textarea.w-select {
 }
 .w-dropdown-list {
   position: absolute;
-  background: #f2f2f2;
+  background: #1d244a;
   display: none;
   min-width: 100%;
 }
@@ -1107,7 +1107,7 @@ textarea.w-select {
   display: block;
 }
 .w-dropdown-link.w--current {
-  color: #339ce1;
+  color: #fff;
 }
 .w-nav[data-collapse="all"] .w-dropdown,
 .w-nav[data-collapse="all"] .w-dropdown-toggle {
