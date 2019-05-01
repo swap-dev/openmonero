@@ -26,7 +26,7 @@
     <!-- Google Font -->
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <!-- Font Awesome -->
-	<link rel="stylesheet" href="fa/css/all.css">
+	<!-- <link rel="stylesheet" href="fa/css/all.css"> -->
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-6jHF7Z3XI3fF4XZixAuSu0gGKrXwoX/w3uFPxC56OtjChio7wtTGJWRW53Nhx6Ev" crossorigin="anonymous">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-5720377-4"></script>
@@ -134,19 +134,22 @@
             </div>
             <a class="w-nav-link nav-link" ng-show="loggedIn()" ng-class="currentPage('-')" ng-click="logout()" href="#!/">Logout</a>
         </nav>
+        <button class="w-nav-button menu-btn menu-btn-toggler">
+            <span class="w-icon-nav-menu"></span>
+        </button>
     </div>
 </div>
 
 <section class="main-section">
     <div ng-view></div>
+
 </section>
-<footer class="footer-section">
-    <!-- // container -->
+<!--<footer class="footer-section">
     <p><i class="fas fa-heart"></i>&ensp;<b>XWP Donation Address</b><br>
     <small><small>fh2jc6PbQYd4a5PY3ooPMZiPVniMy4MGcjSRBnoBVc1xLmdCHJ6hc98Ess2hpN2mDgPnCAXtDUUbmjWYutRvdoSr2Nps2o5wc</small></small><br>
     <small><i class="fas fa-key"></i>&ensp;<b>Private View Key</b></small><br>
     <small><small>84a6ac951dccea8aa5c23127f9e69bd71222d64c0b560bbec49a6e6c01df1205</small></small></p><br>
     Fundamentals Driven Secure Blockchain<br><img src="images/copyleft.svg" alt="Copyleft" class="copyleft"> Copyleft 2019 Swap
-</footer>
+</footer>-->
 </body>
 </html>
