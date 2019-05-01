@@ -1,16 +1,16 @@
 var config = {
     apiUrl: "http://127.0.0.1:1984/",
-    mainnetExplorerUrl: "https://xmrchain.com/",
+    mainnetExplorerUrl: "https://swap.coinscope.cc/",
     testnetExplorerUrl: "https://testnet.xmrchain.com/",
     stagenetExplorerUrl: "http://139.162.60.17:8082/",
     nettype: 2, /* 0 - MAINNET, 1 - TESTNET, 2 - STAGENET */
     coinUnitPlaces: 12,
     txMinConfirms: 10,         // corresponds to CRYPTONOTE_DEFAULT_TX_SPENDABLE_AGE in Monero
     txCoinbaseMinConfirms: 60, // corresponds to CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW in Monero
-    coinSymbol: 'XMR',
-    openAliasPrefix: "xmr",
-    coinName: 'Monero',
-    coinUriPrefix: 'monero:',
+    coinSymbol: 'XWP',
+    openAliasPrefix: "xwp",
+    coinName: 'Swap',
+    coinUriPrefix: 'swap:',
     addressPrefix: 18,
     integratedAddressPrefix: 19,
     subAddressPrefix: 42,
@@ -28,6 +28,6 @@ var config = {
     idleTimeout: 30,
     idleWarningDuration: 20,
     maxBlockNumber: 500000000,
-    avgBlockTime: 120,
+    avgBlockTime: 15,
     debugMode: false
 };
