@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="format-detection" content="telephone=no">
-    <title ng-bind="$root.title + ' - Swap'">Swap | Web Wallet</title>
+    <title ng-bind="$root.title + ' | Swap Web Wallet'">Swap Web Wallet</title>
     <!-- OpenGraph SEO meta tags -->
 	<meta name="description" content="A community developed cryptocurrency striving for robust privacy, ecosystem fairness, full transparency, secure network, and ease of use.">
 	<meta content="wallet, xwp, swap, coin, cryptonote, mimblewimble, cuckoo, cuckaroo, blockchain, crypto-currency" name="keywords">
@@ -26,7 +26,7 @@
     <!-- Google Font -->
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <!-- Font Awesome -->
-	<!-- <link rel="stylesheet" href="fa/css/all.css"> -->
+	<link rel="stylesheet" href="fa/css/all.css">
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-6jHF7Z3XI3fF4XZixAuSu0gGKrXwoX/w3uFPxC56OtjChio7wtTGJWRW53Nhx6Ev" crossorigin="anonymous">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-5720377-4"></script>
@@ -106,9 +106,19 @@
 
 <div class="w-nav nav" data-collapse="small" data-animation="default" data-duration="400" data-contain="1">
     <div class="w-container">
+        <span class="w-nav-brand brand-box">
+        <a ng-href="{{loggedIn() ? '#!/overview' : '#!/'}}">
+            <span><img src="images/logo/swap-logo-coloured.png" alt="Swap" class="swap-hero-logo"></span>
+            <span class="network-style">
+                <span ng-show="nettype == 0"></span>
+                <span ng-show="nettype == 1"><br><i class="fas fa-chart-network"></i>&ensp;Testnet Network</span>
+                <span ng-show="nettype == 2"><br><i class="fas fa-chart-network"></i>&ensp;Stagenet Network</span>
+            </span>
+        </a>
+    </span>
         <nav class="w-nav-menu nav-menu" role="navigation">
-            <a class="w-nav-link nav-link" ng-show="!loggedIn()" ng-class="currentPage('create-your-account')" href="#!/create-your-account">CREATE A NEW ACCOUNT</a>
-            <a class="w-nav-link nav-link pointer login" ng-show="!loggedIn()" data-ix="display-login" show-modal="login">LOG IN</a>
+            <a class="w-nav-link nav-link pointer login login-secondary" ng-show="!loggedIn()" ng-class="currentPage('create-your-account')" href="#!/create-your-account">Create a new account&ensp;<i class="fas fa-user-plus"></i></a>
+            <a class="w-nav-link nav-link pointer login login-secondary" ng-show="!loggedIn()" data-ix="display-login" show-modal="login">Log In&ensp;<i class="fas fa-user"></i></a>
 
             <div class="w-dropdown" ng-show="loggedIn()" data-delay="0">
                 <div class="w-dropdown-toggle dropdown-toggle">
@@ -124,15 +134,9 @@
             </div>
             <a class="w-nav-link nav-link" ng-show="loggedIn()" ng-class="currentPage('-')" ng-click="logout()" href="#!/">Logout</a>
         </nav>
-        <div class="w-nav-button menu-btn">
-            <div class="w-icon-nav-menu"></div>
-        </div>
-        <a class="w-nav-brand brand-box" ng-href="{{loggedIn() ? '#!/overview' : '#!/'}}">
-            <span style="font-size: 32px; font-weight: bold;">SWAP</span>
-            <span style="color:white" ng-show="nettype == 0"><br/></span>
-            <span style="color:white" ng-show="nettype == 1"><br/>testnet monero network</span>
-            <span style="color:white" ng-show="nettype == 2"><br/>stagenet monero network</span>
-        </a>
+        <button class="w-nav-button menu-btn menu-btn-toggler">
+            <span class="w-icon-nav-menu"></span>
+        </button>
     </div>
 </div>
 
@@ -140,5 +144,4 @@
     <div ng-view></div>
 </section>
 </body>
-
 </html>
