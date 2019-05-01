@@ -45,7 +45,7 @@ All current changes, bug fixes and updates are done in the
 
 ## Screenshot
 
-![Open Monero](https://raw.githubusercontent.com/moneroexamples/openmonero/master/screenshot/screen2.png)
+![Open Monero](https://github.com/swap-dev/lightwallet-server/raw/master/screenshot/screen2.png)
 
 
 ## Host it yourself
