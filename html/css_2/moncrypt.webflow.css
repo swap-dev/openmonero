@@ -287,11 +287,18 @@ p {
   text-align: center;
 }
 .footer-section {
-  padding-top: 10px;
-  padding-bottom: 0px;
-  border-top: 1px none #d8e1ed;
-  background-color: #37414f;
-  color: #333;
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  border-top: 1px solid #151933;
+  background-color: #151933;
+  color: #a3acde;
+  word-wrap: break-word;
+}
+.copyleft {
+  height: 1em;
+  width: auto;
+  vertical-align: text-bottom;
 }
 .tooltip-div {
   position: relative;
@@ -1531,10 +1538,7 @@ p {
     line-height: 85px;
   }
   .create-account-btn {
-    margin-right: 0px;
-    margin-left: 0px;
-    padding-right: 121px;
-    padding-left: 121px;
+
   }
   .home-subhead {
     margin-top: 9px;
@@ -2059,8 +2063,7 @@ p {
     padding-bottom: 40px;
   }
   .create-account-btn {
-    padding-right: 72px;
-    padding-left: 72px;
+
   }
   .mid-div {
     margin-bottom: 30px;
