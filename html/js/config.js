@@ -1,8 +1,8 @@
 var config = {
     apiUrl: "http://127.0.0.1:1984/",
     mainnetExplorerUrl: "https://swap.coinscope.cc/",
-    testnetExplorerUrl: "https://testnet.xmrchain.com/",
-    stagenetExplorerUrl: "http://139.162.60.17:8082/",
+    testnetExplorerUrl: "https://swaptest.coinscope.cc/",
+    stagenetExplorerUrl: "http://swapstage.coinscope.cc/",
     nettype: 2, /* 0 - MAINNET, 1 - TESTNET, 2 - STAGENET */
     coinUnitPlaces: 12,
     txMinConfirms: 10,         // corresponds to CRYPTONOTE_DEFAULT_TX_SPENDABLE_AGE in Monero
