@@ -201,7 +201,7 @@ p {
   height: 100%;
   padding-top: 180px;
   padding-bottom: 180px;
-  background-color: #151933;
+  background-color: transparent;
   background-position: 0% 0%, 2% 0%;
   background-size: auto, cover;
 }
@@ -1373,7 +1373,7 @@ p {
 }
 .graph img {
   width: 100%;
-  margin: -20rem 0 -20rem;
+  margin: -15rem 0 -20rem;
   z-index: -1;
   position: relative;
 }
