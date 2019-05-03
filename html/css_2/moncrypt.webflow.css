@@ -254,10 +254,8 @@ p {
   -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  color: #6d70ff;
   background-color: transparent;
   background-image: none;
-  border-color: #6d70ff;
   color: #a3acde;
   margin: 1rem .5rem 0rem;
 }
@@ -1015,6 +1013,7 @@ p {
   -webkit-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease;
+  margin-top: 1rem;
 }
 .mnemonic-login:hover {
   color: #fff;
@@ -1254,13 +1253,12 @@ p {
   vertical-align: middle;
   user-select: none;
   border: 2px solid transparent;
-  padding: 0.55rem 1.8rem;
+  padding: 4px 24px;
   font-size: 1rem;
   line-height: 1.5;
   background-color: transparent;
   background-image: none;
   color: #8795f9;
-  margin: 1rem .5rem 0rem;
 }
 .dropdown-styling:hover {
   color: #fff;
@@ -1276,8 +1274,8 @@ p {
 }
 .dropdown-rounded.w--open {
   display: block;
-  margin-top: 14px;
-  margin-left: 0px;
+  margin: 0.125rem 0 0;
+  padding:0.5rem 0;
   border: 2px solid #1d244a;
   border-radius: 3px;
   background-color: #1d244a;
