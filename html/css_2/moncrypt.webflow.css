@@ -156,7 +156,7 @@ p {
   color:#a3acde;
 }
 .login-link:hover {
-  color:#fff;
+  color:#a3acde;
 }
 .login-link.steps {
   color: #a3acde;
@@ -1203,7 +1203,7 @@ p {
 .lower-nav-link.w--current:focus {
   color: #fff;
   background-color: #2e3880;
-  border-color: #2e3880;
+  border-color: #cdcfd8;
 }
 .dropdown-toggle {
   display: inline-block;
@@ -1225,17 +1225,13 @@ p {
   -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  color: #6d70ff;
   background-color: transparent;
   background-image: none;
-  border-color: #6d70ff;
   color: #a3acde;
   margin: 1rem .5rem 0rem;
 }
 .dropdown-toggle:hover {
   color: #fff;
-  background-color: #6d70ff;
-  border-color: #6d70ff;
 }
 .middle-footer {
   position: static;
@@ -1245,37 +1241,29 @@ p {
   display: block;
   text-align: center;
 }
+.dropdown-divider {
+  height: 0;
+  margin: 0.5rem 0;
+  overflow: hidden;
+  border-top: 1px solid rgba(135, 149, 249, 0.1);
+}
 .dropdown-styling {
   display: inline-block;
   font-weight: 400;
-  text-align: center;
   white-space: nowrap;
   vertical-align: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   border: 2px solid transparent;
   padding: 0.55rem 1.8rem;
   font-size: 1rem;
   line-height: 1.5;
-  border-radius: 0.25rem;
-  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  color: #6d70ff;
   background-color: transparent;
   background-image: none;
-  border-color: #6d70ff;
-  color: #a3acde;
+  color: #8795f9;
   margin: 1rem .5rem 0rem;
 }
 .dropdown-styling:hover {
   color: #fff;
-  background-color: #6d70ff;
-  border-color: #6d70ff;
 }
 .dropdown-styling.top {
 }
