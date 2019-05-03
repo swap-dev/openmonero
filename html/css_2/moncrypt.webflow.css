@@ -236,7 +236,7 @@ p {
 }
 .nav-link {
   display: inline-block;
-  font-weight: 400;
+  font-weight: 600;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -265,14 +265,14 @@ p {
   border-color: transparent;
 }
 .nav-link.w--current {
-  color: #fff;
-  background-color: #6d70ff;
-  border-color: #6d70ff;
+  color: #a3acde;
+  background-color: transparent;
+  border-color: transparent;
 }
 .nav-link.w--current:hover {
   color: #fff;
-  background-color: #6d70ff;
-  border-color: #6d70ff;
+  background-color: transparent;
+  border-color: transparent;
 }
 .nav-link.login {
   display: inline-block;
@@ -791,6 +791,10 @@ p {
   font-size: 14px;
   font-weight: 400;
 }
+.middle-text-address {
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+}
 .middle-text.receive {
   margin-bottom: 30px;
 }
@@ -1209,7 +1213,7 @@ p {
 }
 .dropdown-toggle {
   display: inline-block;
-  font-weight: 400;
+  font-weight: 600;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -1733,6 +1737,10 @@ p {
   .middle-text {
     line-height: 22px;
   }
+  .middle-text-address {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
   .middle-div.send {
     margin-right: 0px;
     margin-left: 0px;
@@ -2003,6 +2011,10 @@ p {
   .middle-text {
     margin-top: 12px;
     line-height: 24px;
+  }
+  .middle-text-address {
+    font-size: 1.75rem;
+    line-height: 2rem;
   }
   .head-modal {
     padding-right: 0px;
