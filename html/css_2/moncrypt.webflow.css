@@ -112,8 +112,8 @@ p {
 .home-header {
   font-family: "Lato", sans-serif;
   color: white;
-  font-size: 2rem;
-  line-height: 3rem;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
   font-weight: 600;
   text-align: center;
 }
@@ -1574,8 +1574,8 @@ p {
     font-size: 34px;
   }
   .home-header {
-    font-size: 1.5rem;
-    line-height: 2.5rem;
+    font-size: 2rem;
+    line-height: 3rem;
   }
   .create-account-btn {
 
