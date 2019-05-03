@@ -260,9 +260,9 @@ p {
   margin: 1rem .5rem 0rem;
 }
 .nav-link:hover {
-  color: #fff;
-  background-color: #6d70ff;
-  border-color: #6d70ff;
+  color: #a3acde;
+  background-color: transparent;
+  border-color: transparent;
 }
 .nav-link.w--current {
   color: #fff;
@@ -270,7 +270,9 @@ p {
   border-color: #6d70ff;
 }
 .nav-link.w--current:hover {
-  color: #6d70ff;
+  color: #fff;
+  background-color: #6d70ff;
+  border-color: #6d70ff;
 }
 .nav-link.login {
   display: inline-block;
@@ -365,14 +367,15 @@ p {
   opacity: 1;
 }
 .modal-background {
-  position: absolute;
-  overflow: scroll;
+  position: fixed;
   left: 0px;
   top: 0px;
   right: 0px;
   bottom: 0px;
   z-index: 1001;
   display: none;
+  margin-right: 0px;
+  margin-left: 0px;
   padding: 60px 15px;
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
@@ -1303,7 +1306,10 @@ p {
   margin-right: 0px;
   margin-left: 0px;
   padding: 60px 15px;
-  background-color: rgba(43, 50, 56, 0.85);
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  opacity: 1;
+  color: black;
 }
 .review-details-div {
   margin-right: 80px;
