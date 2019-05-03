@@ -915,7 +915,7 @@ p {
   /*font-family: "Lato", sans-serif;*/
   font-family: Andale Mono, monospace;
   color: #a3acde;
-  font-size: 10px;
+  font-size: .7rem;
   font-weight: 400;
 }
 .transaction-address.transaction-page {
@@ -926,7 +926,7 @@ p {
   /*font-family: "Lato", sans-serif;*/
   font-family: Andale Mono, monospace;
   color: #a3acde;
-  font-size: 10px;
+  font-size: .8rem;
 }
 .transaction-detail.transaction-left {
   padding-left: 15px;
@@ -1758,7 +1758,7 @@ p {
   .transaction-detail.value-bold {
     margin-top: 12px;
     padding-top: 20px;
-    border-top: 2px solid #dae5f2;
+    border-top: 2px solid #2e3880;
     font-weight: 500;
   }
   .table-headers {
