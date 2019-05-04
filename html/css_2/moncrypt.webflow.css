@@ -94,7 +94,6 @@ p {
   margin-bottom: 0px;
   padding-top: 30px;
   padding-bottom: 0px;
-  background-color: transparent;
   font-size: 14px;
 }
 .body-section.steps-page {
@@ -102,7 +101,6 @@ p {
   height: 100%;
   padding-top: 180px;
   padding-bottom: 180px;
-  background-color: transparent;
   background-position: 0% 0%, 2% 0%;
   background-size: auto, cover;
 }
@@ -191,18 +189,15 @@ p {
 }
 .result-text {
   display: inline-block;
-  margin: 18px 32px 30px;
-  padding: 8px 10px;
-  border-bottom-style: none;
-  border-bottom-color: #e1eaf0;
-  border-radius: 3px;
+  margin: 1rem;
+  padding: 0;
   background-color: transparent;
   font-family: "Lato", sans-serif;
   color: #a3acde;
-  font-size: 23px;
-  line-height: 37px;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
   font-weight: 400;
-  text-align: left;
+  text-align: center;
 }
 .details-block {
   margin-bottom: 40px;
@@ -257,10 +252,10 @@ p {
   background-color: transparent;
   background-image: none;
   color: #a3acde;
-  margin: 1rem .5rem 0rem;
+  margin: 1rem 0rem 0rem;
 }
 .nav-link:hover {
-  color: #a3acde;
+  color: #fff;
   background-color: transparent;
   border-color: transparent;
 }
@@ -297,7 +292,6 @@ p {
   margin: 1rem .5rem 0rem;
 }
 .nav-link.login-secondary {
-  color: #6d70ff;
   background-color: transparent;
   background-image: none;
   border-color: #6d70ff;
@@ -784,23 +778,23 @@ p {
   background-color: #1d244a;
 }
 .middle-text {
-  margin-top: 9px;
+  margin-top: 1rem;
   margin-bottom: 0px;
   font-family: "Lato", sans-serif;
   color: #a3acde;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 400;
 }
 .middle-text-address {
-  font-size: 1.75rem;
-  line-height: 2.5rem;
+  font-size: .9rem;
+  line-height: 1.3rem;
 }
 .middle-text.receive {
   margin-bottom: 30px;
 }
 .middle-div {
-  margin-bottom: 35px;
-  padding-bottom: 35px;
+  margin-bottom: 2rem;
+  padding-bottom: 0;
   border-bottom-style: solid;
   border-bottom-color: #1d244a;
 }
@@ -888,7 +882,7 @@ p {
   text-align: left;
 }
 .info-header.middle {
-  margin-bottom: 15px;
+  margin-bottom: 2rem;
   line-height: 24px;
   text-align: center;
 }
@@ -901,10 +895,10 @@ p {
   text-align: center;
 }
 .transaction-head {
-  margin-top: 15px;
+  margin-top: 1rem;
   font-family: "Lato", sans-serif;
   color: #a3acde;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: 500;
 }
 .transaction-head.transactions {
@@ -1162,8 +1156,7 @@ p {
 .lower-nav-section {
   padding-top: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px none #1d244a;
-  background-color: #1d244a;
+  background-color: transparent;
 }
 .lower-nav-link {
   color: #a3acde;
@@ -1195,6 +1188,7 @@ p {
   color: #fff;
   background-color: #2e3880;
   border-color: #2e3880;
+  text-decoration: none;
 }
 .lower-nav-link:focus {
   color: #fff;
@@ -1234,7 +1228,7 @@ p {
   background-color: transparent;
   background-image: none;
   color: #a3acde;
-  margin: 1rem .5rem 0rem;
+  margin: 1rem 0rem 0rem;
 }
 .dropdown-toggle:hover {
   color: #fff;
@@ -1407,6 +1401,7 @@ p {
 .create-account-btn:hover {
   color: #fff;
   filter: saturate(2);
+  text-decoration: none;
 }
 .home-container {
   text-align: center;
@@ -1554,8 +1549,6 @@ p {
     margin-left: 0px;
   }
   .result-text {
-    margin-bottom: 0px;
-    line-height: 38px;
   }
   .links-div {
     float: none;
@@ -1658,8 +1651,6 @@ p {
     padding-left: 22px;
   }
   .result-text {
-    margin-bottom: 0px;
-    line-height: 42px;
   }
   .brand-box {
     margin-left: 10px;
@@ -1743,8 +1734,8 @@ p {
     line-height: 22px;
   }
   .middle-text-address {
-    font-size: 1.75rem;
-    line-height: 2rem;
+    font-size: .9rem;
+    line-height: 1rem;
   }
   .middle-div.send {
     margin-right: 0px;
@@ -1791,8 +1782,6 @@ p {
     margin-left: 0px;
   }
   .lower-nav-link {
-    margin-right: 38px;
-    margin-left: 20px;
   }
   .dropdown-toggle {
     margin-right: 250px;
@@ -2018,8 +2007,8 @@ p {
     line-height: 24px;
   }
   .middle-text-address {
-    font-size: 1.75rem;
-    line-height: 2rem;
+    font-size: .9rem;
+    line-height: 1rem;
   }
   .head-modal {
     padding-right: 0px;
@@ -2036,7 +2025,6 @@ p {
     box-shadow: none;
   }
   .transaction-head {
-    margin-top: 10px;
   }
   .transaction-address.transaction-page {
     margin-left: 14px;
@@ -2089,8 +2077,6 @@ p {
     padding-bottom: 30px;
   }
   .lower-nav-link {
-    margin-right: 0px;
-    margin-left: 15px;
   }
   .dropdown-toggle {
     margin-right: 80px;

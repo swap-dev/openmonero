@@ -57,6 +57,9 @@ html.w-mod-touch * {
 a:focus {
   outline: 0;
 }
+a:hover {
+  text-decoration: none;
+}
 .w-block {
   display: block;
 }
@@ -171,20 +174,20 @@ label {
 }
 .w-input:-moz-placeholder,
 .w-select:-moz-placeholder {
-  color: #666666;
+  color: #777;
 }
 .w-input::-moz-placeholder,
 .w-select::-moz-placeholder {
-  color: #666666;
+  color: #777;
   opacity: 1;
 }
 .w-input:-ms-input-placeholder,
 .w-select:-ms-input-placeholder {
-  color: #666666;
+  color: #777;
 }
 .w-input::-webkit-input-placeholder,
 .w-select::-webkit-input-placeholder {
-  color: #666666;
+  color: #777;
 }
 .w-input:focus,
 .w-select:focus {
@@ -1465,6 +1468,9 @@ textarea.w-select {
   text-decoration: none;
   color: #fff;
 }
+.w-nav-brand a:hover {
+  text-decoration: none;
+}
 .swap-hero-logo {
   max-width: 15rem;
   height: auto;
@@ -1476,7 +1482,6 @@ textarea.w-select {
   display: inline;
   vertical-align: top;
   text-decoration: none;
-  color: #222;
   padding: 20px;
   text-align: left;
   margin-left: auto;
