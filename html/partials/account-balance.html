@@ -3,7 +3,7 @@
             <div class="balance-header"><i class="fas fa-university"></i>&ensp;Your Balance&ensp;|&ensp;<i class="fas fa-unlock-alt"></i>&ensp;Unlocked Balance</div>
         </div>
         <div class="balance-text" ng-show="!blockchain_height">
-            <i class="fas fa-spinner fa-spin"></i>&ensp;Fetching initial data... Please wait.
+            <i class="fas fa-spinner fa-spin"></i>&ensp;Fetching initial data.. Please wait.
         </div>
         <div class="balance-text" ng-show="blockchain_height">
             {{balance | money:false:true}} | {{balance_unlocked | money:false:true}}<br/>
