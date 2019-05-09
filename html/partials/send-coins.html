@@ -76,7 +76,7 @@
                            data-wait="Please wait..." ng-disabled="submitting">
                 </form>
                 <div class="w-form-done" style="display: block;" ng-show="!!status">
-                    <p>{{status}}</p>
+                    <p><i class="fas fa-spinner fa-spin"></i>&ensp;{{status}}</p>
                 </div>
                 <div class="w-form-fail error-backing" style="display: block;" ng-show="!!error">
                     <p>{{error}}</p>
