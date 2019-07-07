@@ -21,7 +21,7 @@
                                 <div>Login with Private Mnemonic Seed&ensp;<i class="fas fa-sign-in-alt"></i></div>
                             </a>
                             <a class="w-tab-link w-inline-block tab-link-2" ng-class="{'w--current': tab_number == 2}" data-w-tab="Tab 2" ng-click="set_tab(2)">
-                                <div>Login with Address and Viewkey&ensp;<i class="fas fa-sign-in-alt"></i></div>
+                                <div>Login with Address and Private Viewkey&ensp;<i class="fas fa-sign-in-alt"></i></div>
                             </a>
                         </div>
                         <div class="w-tab-content">
@@ -59,10 +59,10 @@
                                         <label class="field-label" for="your-address"><i class="fas fa-wallet"></i>&ensp;Your Address</label>
                                         <input class="w-input" id="your-address" type="text" placeholder="Enter your address here"
                                                name="Your-address" data-name="Your address" autocomplete="off" required="required" ng-model="address">
-                                        <label class="field-label" for="view-key"><i class="fas fa-key"></i>&ensp;View Key</label>
+                                        <label class="field-label" for="view-key"><i class="fas fa-key"></i>&ensp;Private View Key</label>
                                         <input class="w-input" id="view-key" type="text" placeholder="Enter your view key here"
                                                name="View-Key" data-name="View Key" autocomplete="off" required="required" ng-model="view_key">
-                                        <label class="field-label" for="spend-key"><i class="fas fa-key"></i>&ensp;Spend Key</label>
+                                        <label class="field-label" for="spend-key"><i class="fas fa-key"></i>&ensp;Private Spend Key (optional)</label>
                                         <input class="w-input" id="spend-key" type="text" placeholder="Optionally, enter your spend key here"
                                                name="Spend-Key" data-name="Spend Key" autocomplete="off" ng-model="spend_key">
                                         <div class="subhead-text modal">
