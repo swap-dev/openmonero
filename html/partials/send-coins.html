@@ -12,8 +12,8 @@
                 <div class="w-col w-col-6">
                     <div ng-show="!success_page">
                         <div class="header-div-block">
-                            <h1 class="heading-contained">Send Funds</h1>
-                            <div class="subhead-text inner">Send funds to any Monero user anywhere in the world</div>
+                            <h1 class="heading-contained"><i class="fas fa-share-square gradient-icon"></i>&ensp;Send Funds</h1>
+                            <div class="subhead-text inner">Send funds to any Swap user anywhere in the world.</div>
                         </div>
                     </div>
                     <div ng-show="success_page">
@@ -36,17 +36,17 @@
             <div class="w-form send-form">
                 <form name="email-form" data-name="Email Form" data-redirect="/transaction-successful.html"
                       ng-submit="sendCoins(targets, payment_id)">
-                    <label class="send-label" for="receiver-address">Receiver Address</label>
-                    <input class="w-input" id="receiver-address" type="text" placeholder="e.g. donate@getmonero.org / donate.getmonero.org / a full Monero address"
+                    <label class="send-label" for="receiver-address"><i class="fas fa-wallet"></i>&ensp;Receiver Address</label>
+                    <input class="w-input" id="receiver-address" type="text" placeholder="swap address"
                            name="Receiver-address" data-name="Receiver address" required="required" ng-model="targets[0].address">
                     <div class="w-row">
                         <div class="w-col w-col-6 responsive-column">
-                            <label class="send-label" for="amount">Amount</label>
+                            <label class="send-label" for="amount"><i class="fas fa-sort-amount-up"></i>&ensp;Amount</label>
                             <input class="w-input" id="amount" type="text" placeholder="e.g. 0.5"
                                    name="Amount" data-name="Amount" required="required" ng-model="targets[0].amount">
                         </div>
                         <div class="w-col w-col-6 responsive-column">
-                            <label class="send-label" for="payment-id">Payment ID (Optional)</label>
+                            <label class="send-label" for="payment-id"><i class="fas fa-id-card-alt"></i>&ensp;Payment ID (Optional)</label>
                             <input class="w-input" id="payment-id" type="text"
                                    placeholder="e.g. 59af9132941ec6e9f6ba3c4867e1cd92f2bd5fbce4325fc7b19bcdb55d640de5" name="Receiver-address-2"
                                    data-name="Receiver Address 2" ng-model="payment_id">
@@ -76,7 +76,7 @@
                            data-wait="Please wait..." ng-disabled="submitting">
                 </form>
                 <div class="w-form-done" style="display: block;" ng-show="!!status">
-                    <p>{{status}}</p>
+                    <p><i class="fas fa-spinner fa-spin"></i>&ensp;{{status}}</p>
                 </div>
                 <div class="w-form-fail error-backing" style="display: block;" ng-show="!!error">
                     <p>{{error}}</p>
@@ -86,25 +86,25 @@
         <div class="middle-div send" ng-show="success_page">
             <div class="w-form send-form">
                 <form name="email-form" data-name="Email Form" data-redirect="/send.html" ng-submit="resetSuccessPage()">
-                    <label class="send-label" for="Receiver-address">Receiver Address</label>
+                    <label class="send-label" for="Receiver-address"><i class="fas fa-wallet"></i>&ensp;Receiver Address</label>
                     <div class="move-text-div">
                         <div class="middle-text receive">{{sent_tx.address}} <span ng-show="sent_tx.domain">({{sent_tx.domain}})</span></div>
                     </div>
                     <div class="w-row">
                         <div class="w-col w-col-4 responsive-column">
-                            <label class="send-label" for="Amount">Amount</label>
+                            <label class="send-label" for="Amount"><i class="fas fa-sort-amount-up"></i>&ensp;Amount</label>
                             <div class="middle-text receive">{{sent_tx.amount | money}} (+{{sent_tx.tx_fee | money}} fee)</div>
                         </div>
                         <div class="w-col w-col-8 responsive-column">
-                            <label class="send-label" >Payment ID</label>
+                            <label class="send-label" ><i class="fas fa-id-card-alt"></i>&ensp;Payment ID</label>
                             <div class="middle-text receive">{{sent_tx.payment_id || "N/A"}}</div>
                         </div>
                     </div>
-                    <label class="send-label" >Transaction ID/Hash</label>
+                    <label class="send-label" ><i class="fas fa-id-card-alt"></i>&ensp;Transaction ID/Hash</label>
                     <div class="move-text-div">
                         <div class="middle-text receive">{{sent_tx.tx_id}}</div>
                     </div>
-                    <label class="send-label" >Transaction Private Key (save it as the key is not recoverable!)</label>
+                    <label class="send-label" ><i class="fas fa-key"></i>&ensp;Transaction Private Key (save it as the key is not recoverable!)</label>
                     <div class="move-text-div">
                         <div class="middle-text receive">{{sent_tx.tx_key}}</div>
                     </div>
@@ -123,5 +123,8 @@
         <div class="w-col w-col-11">
             <div class="middle-text ">View only wallets can't sent any transactions, as spendkey is unknown</div>
         </div>
+    </div>
+    <div class="graph">
+        <img src="images/graph-swap.svg" alt="graph" class="img-fluid">
     </div>
 </div>
