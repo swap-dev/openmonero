@@ -9,15 +9,6 @@ TxUnlockChecker::get_current_time() const
     return static_cast<uint64_t>(time(NULL));
 }
 
-
-uint64_t
-TxUnlockChecker::get_v2height(network_type net_type) const
-{
-    return net_type == TESTNET ?
-                624634 : net_type == STAGENET ?
-                   (uint64_t)-1 : 1009827;
-}
-
 uint64_t
 TxUnlockChecker::get_leeway(
         uint64_t tx_block_height,

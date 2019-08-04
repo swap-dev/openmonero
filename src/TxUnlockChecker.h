@@ -27,9 +27,6 @@ public:
     get_current_time() const;
 
     virtual uint64_t
-    get_v2height(network_type net_type) const;
-
-    virtual uint64_t
     get_leeway(uint64_t tx_block_height, network_type net_type) const;
 
     virtual bool

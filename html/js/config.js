@@ -1,8 +1,8 @@
 var config = {
     apiUrl: "/api/",
-    mainnetExplorerUrl: "https://swap.coinscope.cc/",
-    testnetExplorerUrl: "https://swaptest.coinscope.cc/",
-    stagenetExplorerUrl: "http://swapstage.coinscope.cc/",
+    mainnetExplorerUrl: "https://explorer.xwp.one/",
+    testnetExplorerUrl: "https://explorer.test.xwp.one/",
+    stagenetExplorerUrl: "https://explorerstage.xwp.one/",
     nettype: 0, /* 0 - MAINNET, 1 - TESTNET, 2 - STAGENET */
     coinUnitPlaces: 12,
     txMinConfirms: 10,         // corresponds to CRYPTONOTE_DEFAULT_TX_SPENDABLE_AGE in Monero
