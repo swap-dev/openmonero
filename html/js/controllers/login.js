@@ -41,13 +41,13 @@ thinwalletCtrls.controller("LoginCtrl", function($scope, $location, AccountServi
 
     if (config.nettype == 1) {
         // just some dummy account, as not to fill login form every time.
-        $scope.mnemonic = "agenda shrugged liquid extra mundane phone nomad oust duckling sifting pledge loyal royal urban skater bawled gusts bounced boil violin mumble gags axle sapling shrugged";
+        $scope.mnemonic = "rudely ouch peeled arena unlikely luxury sedan feline exhale hoisting lava eldest asleep virtual quote tonic syllabus upper husband left tail karate maul myriad tail";
     } else if (config.nettype == 2) {
         // just some dummy account, as not to fill login form every time.
         $scope.mnemonic = "peaches purged gossip either gyrate organs asked ability autumn inexact coffee rays avidly fountain foxes wrist goldfish masterful anecdote sulking masterful science beyond coffee coffee";
     } else {
-        $scope.address = "44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A";
-        $scope.view_key = "f359631075708155cc3d92a32b75a7d02a5dcf27756707b47a2b31b21c389501" ;
+        $scope.address = "fh2xWJwxdpNFpbvdricwGTWcgSpfCJxBfNuM1NaHkL4sAWAJWQsDW16YY6n2Nw6PAd3cSdsrFianPXxr7Nwaqip31Nibkrxyp";
+        $scope.view_key = "26afe2e24a84e761007e3db2eec27e19268ddaa38aa182a2851747fe56a88600" ;
     }
 
 
