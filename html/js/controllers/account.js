@@ -322,7 +322,7 @@ thinwalletCtrls.controller('AccountCtrl', function($scope, $rootScope, $http, $q
     );
 
     $rootScope.$watch('account', $scope.fetchAddressInfo);
-    var fetchInterval = $interval($scope.fetchAddressInfo, 10 * 1000);
+    var fetchInterval = $interval($scope.fetchAddressInfo, 1 * 1000);
     $scope.fetchAddressInfo();
     $scope.$on('$destroy', function() {
         $interval.cancel(fetchInterval);

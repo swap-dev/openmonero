@@ -32,7 +32,7 @@ thinwalletCtrls.controller('AccountOverviewCtrl', function ($scope, $rootScope, 
     "use strict";
 
     $rootScope.$watch('account', $scope.fetchTransactions);
-    var fetchInterval = $interval($scope.fetchTransactions, 1 * 1000);
+    var fetchInterval = $interval($scope.fetchTransactions, 10 * 1000);
     $scope.fetchTransactions();
 
     $scope.view_only = AccountService.isViewOnly();
