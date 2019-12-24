@@ -1323,6 +1323,7 @@ p {
 .review-text {
   font-family: "Lato", sans-serif;
   color: #ccc;
+  font-size: 12px;
 }
 .review-text a:link,
 .review-text a:hover,
@@ -1897,6 +1898,7 @@ p {
 @media (max-width: 479px) {
   h1 {
     margin-left: 0px;
+    font-size: large;
   }
   .nav-link {
     margin: 0px 100px 0px 20px;
