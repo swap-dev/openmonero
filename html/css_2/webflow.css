@@ -741,6 +741,8 @@ textarea.w-select {
 @media screen and (max-width: 479px) {
   .w-container {
     max-width: none;
+    height:100%;
+    overflow: scroll;
   }
   .w-hidden-main {
     display: inherit !important;
