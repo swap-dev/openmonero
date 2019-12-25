@@ -37,7 +37,7 @@
                 <form name="email-form" data-name="Email Form" data-redirect="/transaction-successful.html"
                       ng-submit="sendCoins(targets, payment_id)">
                     <label class="send-label" for="receiver-address"><i class="fas fa-wallet"></i>&ensp;Receiver Address</label>
-                    <input class="w-input" id="receiver-address" type="text" placeholder="swap address"
+                    <input class="w-input" id="receiver-address" type="text" placeholder="Swap address"
                            name="Receiver-address" data-name="Receiver address" required="required" ng-model="targets[0].address">
                     <div class="w-row">
                         <div class="w-col w-col-6 responsive-column">
@@ -48,7 +48,7 @@
                         <div class="w-col w-col-6 responsive-column">
                             <label class="send-label" for="payment-id"><i class="fas fa-id-card-alt"></i>&ensp;Payment ID (Optional)</label>
                             <input class="w-input" id="payment-id" type="text"
-                                   placeholder="⛔Warning! Payment ID is obsolete" name="Receiver-address-2"
+                                   placeholder="⛔ Warning! Payment ID is obsolete" name="Receiver-address-2"
                                    data-name="Receiver Address 2" ng-model="payment_id">
                         </div>
                     </div>
