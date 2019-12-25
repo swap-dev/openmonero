@@ -18,10 +18,10 @@
                     <div class="w-tabs" data-duration-in="300" data-duration-out="100">
                         <div class="w-tab-menu tabs-style">
                             <a class="w-tab-link w-inline-block tab-link-1" ng-class="{'w--current': tab_number == 1}" data-w-tab="Tab 1" ng-click="set_tab(1)">
-                                <div>Login with Private Mnemonic Seed&ensp;<i class="fas fa-sign-in-alt"></i></div>
+                                <div>Mnemonic Seed&ensp;<i class="fas fa-sign-in-alt"></i></div>
                             </a>
                             <a class="w-tab-link w-inline-block tab-link-2" ng-class="{'w--current': tab_number == 2}" data-w-tab="Tab 2" ng-click="set_tab(2)">
-                                <div>Login with Address and Private Viewkey&ensp;<i class="fas fa-sign-in-alt"></i></div>
+                                <div>Address and PrivKey&ensp;<i class="fas fa-sign-in-alt"></i></div>
                             </a>
                         </div>
                         <div class="w-tab-content">
@@ -29,7 +29,7 @@
                                 <div class="form-wrapper">
                                     <form id="email-form" name="email-form" data-name="Email Form" data-redirect="/overview.html"
                                           ng-submit="login_mnemonic(mnemonic, mnemonic_language)" >
-                                        <label class="field-label" for="Login-Key"><i class="fas fa-seedling"></i>&ensp;Your Private Mnemonic Seed Login</label>
+                                        <label class="field-label" for="Login-Key"><i class="fas fa-seedling"></i>&ensp;Mnemonic Seed</label>
                                         <input class="w-input" id="Login-Key" type="text" placeholder="Enter your Private Mnemonic Seed here"
                                                name="Login-Key" data-name="Login Key" autocomplete="off" required="required" ng-model="mnemonic">
                                         <label class="field-label" for="Login-Key-Language"><i class="fas fa-globe-americas"></i>&ensp;Language</label>
