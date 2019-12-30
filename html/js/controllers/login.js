@@ -46,8 +46,8 @@ thinwalletCtrls.controller("LoginCtrl", function($scope, $location, AccountServi
         // just some dummy account, as not to fill login form every time.
         $scope.mnemonic = "peaches purged gossip either gyrate organs asked ability autumn inexact coffee rays avidly fountain foxes wrist goldfish masterful anecdote sulking masterful science beyond coffee coffee";
     } else {
-        $scope.address = "Enter your address";
-        $scope.view_key = "Enter your privkey" ;
+        $scope.address = "";
+        $scope.view_key = "" ;
     }
 
 
