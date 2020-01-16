@@ -10,7 +10,8 @@
   <div class="w-container create-account-container">
     <div class="no-account-div upper-box">
       <div class="info-header middle-top"><i class="fas fa-hand-holding-seedling gradient-icon"></i>&ensp;Your Private Mnemonic Seed Login</div>
-      <div class="result-text">{{mnemonic}}</div>
+      <div class="result-text" id="copy-seed">{{mnemonic}}</div>
+      <button class="btn" data-clipboard-target="#copy-seed">Copy</button>
     </div>
     <div class="mid-div">
       <div class="w-form formwrap login-key-form">

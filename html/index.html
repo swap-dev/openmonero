@@ -106,10 +106,24 @@
     <script src="js/directives/transacation.js?1"></script>
     <!--<script src="js/directives/forms.js?1"></script>-->
     <script src="js/routes.js?4"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
 </head>
 
 <body ng-controller="AccountCtrl">
 
+    <!-- Adding clipboard function-->
+    <script>
+        var clipboard = new ClipboardJS('.btn');
+    
+        clipboard.on('success', function(e) {
+            console.log(e);
+        });
+    
+        clipboard.on('error', function(e) {
+            console.log(e);
+        });
+        </script>
+        
 <div ng-include src="getModalURL()"></div>
 
 <div class="w-nav nav" data-collapse="small" data-animation="default" data-duration="400" data-contain="1">
