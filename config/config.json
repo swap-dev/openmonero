@@ -2,9 +2,9 @@
   "daemon-url" :
   {
     "_comment" : "RPC urls to monero deamon",
-    "mainnet"  : "http://127.0.0.1:18081",
-    "testnet"  : "http://127.0.0.1:28081",
-    "stagenet" : "http://127.0.0.1:38081"
+    "mainnet"  : "http://127.0.0.1:19950",
+    "testnet"  : "http://127.0.0.1:29950",
+    "stagenet" : "http://127.0.0.1:39950"
   },
   "blockchain-path" :
   {
@@ -43,8 +43,8 @@
     "mainnet" :
     {
       "_comment": "these are official monero project donation address and viewkey. change it to yours",
-      "address" : "44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A",
-      "viewkey" : "f359631075708155cc3d92a32b75a7d02a5dcf27756707b47a2b31b21c389501"
+      "address" : "fh37g5VFDk3dqFUu6b1njZYjV5fEC7MwhFFvWMw7pz5DLdVYak37555BoiKnPkEkhjAmAbpHq8XfbS7SqqJpnpEc1tfKYbxGY",
+      "viewkey" : "7e2612df9feed73ef2c907d575ea5b55c24800d9720b3c3b359471d8ce7a3102"
     },
     "stagenet" :
     {
@@ -53,12 +53,12 @@
     }
   },
   "refresh_block_status_every_seconds" : 10,
-  "blocks_search_lookahead"            : 200,
+  "blocks_search_lookahead"            : 1200,
   "search_thread_life_in_seconds"      : 120,
   "max_number_of_blocks_to_import"     : 132000,
   "mysql_ping_every_seconds"           : 200,
   "_comment": "if the threadpool_size (no of threads) below is 0, its size is automaticly set based on your cpu. If its not 0, the value specified is used instead",
-  "blockchain_treadpool_size"          : 1,
+  "blockchain_treadpool_size"          : 0,
   "ssl" :
   {
     "enable" : false,
