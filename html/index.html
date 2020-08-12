@@ -1,14 +1,49 @@
 <!DOCTYPE html>
-<html ng-app="thinWallet">
-
-<head lang="en">
+<html ng-app="thinWallet" lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-5720377-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-5720377-5');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="format-detection" content="telephone=no">
-
-    <title ng-bind="$root.title + ' - Open Monero'">Open Monero</title>
-
+    <title ng-bind="'Swap Wallet | ' + $root.title">Swap Wallet</title>
+    <!-- OpenGraph SEO meta tags -->
+	<meta name="description" content="A community developed cryptocurrency striving for robust privacy, ecosystem fairness, full transparency, secure network, and ease of use.">
+	<meta content="wallet, xwp, swap, coin, cryptonote, mimblewimble, cuckoo, cuckaroo, blockchain, crypto-currency" name="keywords">
+	<meta content="https://swap.fyi/images/logo/swap-logo-banner.png" property="og:image">
+	<meta content="Swap Wallet" property="og:title">
+	<meta content="website" property="og:type">
+	<!-- TwitterCard meta tags -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@_realSwap">
+	<meta name="twitter:title" content="Swap Wallet">
+	<meta name="twitter:description" content="A community developed cryptocurrency striving for robust privacy, ecosystem fairness, full transparency, secure network, and ease of use.">
+	<meta name="twitter:image" content="https://swap.fyi/images/logo/swap-logo-banner.png">
+    <!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- Font Awesome -->
+	<!-- <link rel="stylesheet" href="fa/css/all.css"> -->
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-6jHF7Z3XI3fF4XZixAuSu0gGKrXwoX/w3uFPxC56OtjChio7wtTGJWRW53Nhx6Ev" crossorigin="anonymous">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-5720377-4"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-5720377-4');
+	</script>
     <link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css"/>
     <link href="bower_components/fontawesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
     <link href="css/print.css" media="print" rel="stylesheet" type="text/css"/>
@@ -18,13 +53,11 @@
     <link href="css_2/normalize.css" rel="stylesheet"/>
     <link href="css_2/webflow.css" rel="stylesheet"/>
     <link href="css_2/moncrypt.webflow.css" rel="stylesheet"/>
-
     <style>
         .move-text-div {
             word-wrap: break-word;
         }
     </style>
-
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <!--<script src="bower_components/fastclick/lib/fastclick.js"></script>-->
     <script src="bower_components/angular/angular.min.js"></script>
@@ -73,73 +106,70 @@
     <script src="js/directives/transacation.js?1"></script>
     <!--<script src="js/directives/forms.js?1"></script>-->
     <script src="js/routes.js?4"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
 </head>
 
 <body ng-controller="AccountCtrl">
 
+    <!-- Adding clipboard function-->
+    <script>
+        var clipboard = new ClipboardJS('.btn');
+    
+        clipboard.on('success', function(e) {
+            console.log(e);
+        });
+    
+        clipboard.on('error', function(e) {
+            console.log(e);
+        });
+        </script>
+        
 <div ng-include src="getModalURL()"></div>
 
 <div class="w-nav nav" data-collapse="small" data-animation="default" data-duration="400" data-contain="1">
     <div class="w-container">
+        <span class="w-nav-brand brand-box">
+        <a ng-href="{{loggedIn() ? '#!/overview' : '#!/'}}">
+            <span><img src="images/logo/swap-logo-coloured.png" alt="Swap" class="swap-hero-logo"></span>
+            <span class="network-style">
+                <span ng-show="nettype == 0"></span>
+                <span ng-show="nettype == 1"><br><i class="fas fa-chart-network"></i>&ensp;Testnet Network</span>
+                <span ng-show="nettype == 2"><br><i class="fas fa-chart-network"></i>&ensp;Stagenet Network</span>
+            </span>
+        </a>
+    </span>
         <nav class="w-nav-menu nav-menu" role="navigation">
-            <a class="w-nav-link nav-link" ng-show="!loggedIn()" ng-class="currentPage('create-your-account')" href="#!/create-your-account">CREATE A NEW ACCOUNT</a>
-            <a class="w-nav-link nav-link" ng-show="!loggedIn()" ng-class="currentPage('support')" href="#!/support">SUPPORT</a>
-            <a class="w-nav-link nav-link pointer login" ng-show="!loggedIn()" data-ix="display-login" show-modal="login">LOG IN</a>
+            <a class="w-nav-link nav-link pointer login login-secondary" ng-show="!loggedIn()" ng-class="currentPage('create-your-account')" href="#!/create-your-account">Create account&ensp;<i class="fas fa-user-plus"></i></a>
+            <a class="w-nav-link nav-link pointer login login-secondary" ng-show="!loggedIn()" data-ix="display-login" show-modal="login">Log In&ensp;<i class="fas fa-sign-in-alt"></i></a>
 
             <div class="w-dropdown" ng-show="loggedIn()" data-delay="0">
                 <div class="w-dropdown-toggle dropdown-toggle">
-                    <div>Account</div>
+                    <div>Account&ensp;</div>
                     <div class="w-icon-dropdown-toggle arrow-icon-style"></div>
                 </div>
                 <nav class="w-dropdown-list dropdown-rounded">
-                    <a class="w-dropdown-link dropdown-styling pointer top" data-ix="display-login-key-review" show-modal="review-login-key">Review Login Key</a>
+                    <a class="w-dropdown-link dropdown-styling pointer" data-ix="display-login-key-review" show-modal="review-login-key"><i class="fas fa-seedling fa-fw"></i>&ensp;Review Login Seed</a>
+                    <div class="dropdown-divider"></div>
                     <!--<a class="w-dropdown-link dropdown-styling pointer" show-modal="import-wallet" ng-hide="account_scan_start_height == 0">Import Transactions</a>-->
-                    <a class="w-dropdown-link dropdown-styling pointer" show-modal="imported-account">Import Transactions</a>
-                    <a class="w-dropdown-link dropdown-styling pointer bottom" data-ix="display-review-account" show-modal="review-account-details">Account Details</a>
+                    <a class="w-dropdown-link dropdown-styling pointer" show-modal="imported-account"><i class="far fa-file-import fa-fw"></i>&ensp;Import Transactions</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="w-dropdown-link dropdown-styling pointer" data-ix="display-review-account" show-modal="review-account-details"><i class="fas fa-file-user fa-fw"></i>&ensp;Account Details</a>
                 </nav>
             </div>
-            <a class="w-nav-link nav-link" ng-show="loggedIn()" ng-class="currentPage('support')" href="#!/support">Support</a>
-            <a class="w-nav-link nav-link" ng-show="loggedIn()" ng-class="currentPage('-')" ng-click="logout()" href="#!/">Logout</a>
+            <a class="w-nav-link nav-link" ng-show="loggedIn()" ng-class="currentPage('-')" ng-click="logout()" href="#!/">Logout&ensp;<i class="fas fa-sign-out-alt"></i></a>
         </nav>
-        <div class="w-nav-button menu-btn">
-            <div class="w-icon-nav-menu"></div>
-        </div>
-        <a class="w-nav-brand brand-box" ng-href="{{loggedIn() ? '#!/overview' : '#!/'}}">
-            <span style="font-size: 32px; font-weight: bold;">OPEN MONERO</span>
-            <span style="color:white" ng-show="nettype == 0"><br/>mainnet monero network</span>
-            <span style="color:white" ng-show="nettype == 1"><br/>testnet monero network</span>
-            <span style="color:white" ng-show="nettype == 2"><br/>stagenet monero network</span>
-        </a>
+        <button class="w-nav-button menu-btn menu-btn-toggler">
+            <span class="w-icon-nav-menu"></span>
+        </button>
     </div>
 </div>
 
 <section class="main-section">
     <div ng-view></div>
 </section>
-<div class="footer-section">
-    <div class="lower-footer">
-        <div class="w-container">
-            <div class="w-row">
-                <div class="w-col w-col-4 middle-footer">
-                    <div class="copyright-text"><a class="footer-link"  href="https://github.com/moneroexamples/restbed-xmr">Source code</a></div>
-                </div>
-                <div class="w-clearfix footer-link">
-                    The fontend is adapted from <a class="footer-link"  style="margin-left: 0; float: none;" href="https://mymonero.com"> MyMonero</a>
-                </div>
-                <div class="w-col w-col-4 bottom-footer-column">
-                    <!--
-                    <div class="w-clearfix footer-link">
-                        <a class="footer-link" href="#/privacy-policy" ng-class="currentPage('privacy-policy')">Privacy Policy</a>
-                    </div>
-                    <div class="w-clearfix footer-link">
-                        <a class="footer-link" href="#/terms" ng-class="currentPage('terms')">Terms of Use</a>
-                    </div>
-                    -->
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<footer class="footer-section">
+    Fundamentals Driven Secure Blockchain<br><img src="images/copyleft.svg" alt="Copyleft" class="copyleft"> 2019-2020 Swap Project
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

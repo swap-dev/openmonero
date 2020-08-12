@@ -22,7 +22,7 @@
 .w-icon-slider-left:before {
   content: "\e601";
 }
-.w-icon-nav-menu:before {
+.www-icon-nav-menu:before {
   content: "\e602";
 }
 .w-icon-arrow-down:before,
@@ -38,10 +38,13 @@ html {
   height: 100%;
 }
 body {
-  margin: 0;
+  margin:0;
   min-height: 100%;
-  background-color: #fff;
-  color: #333;
+  background-color: #151933;
+  font-family: "Lato", Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  color: #a3acde;
+  font-size: 14px;
+  line-height: 20px;
 }
 img {
   max-width: 100%;
@@ -53,6 +56,9 @@ html.w-mod-touch * {
 }
 a:focus {
   outline: 0;
+}
+a:hover {
+  text-decoration: none;
 }
 .w-block {
   display: block;
@@ -138,7 +144,7 @@ input[type="submit"] {
 .w-form-done {
   display: none;
   padding: 10px;
-  background-color: #dddddd;
+  background-color: #6d70ff;
 }
 .w-form-fail {
   display: none;
@@ -160,31 +166,32 @@ label {
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.428571429;
-  color: #555555;
+  color: #a3acde;
   vertical-align: middle;
-  background-color: #ffffff;
-  border: 1px solid #cccccc;
+  background-color: #1d244a;
+  border: 2px solid #2e3880;
+
 }
 .w-input:-moz-placeholder,
 .w-select:-moz-placeholder {
-  color: #999999;
+  color: #777;
 }
 .w-input::-moz-placeholder,
 .w-select::-moz-placeholder {
-  color: #999999;
+  color: #777;
   opacity: 1;
 }
 .w-input:-ms-input-placeholder,
 .w-select:-ms-input-placeholder {
-  color: #999999;
+  color: #777;
 }
 .w-input::-webkit-input-placeholder,
 .w-select::-webkit-input-placeholder {
-  color: #999999;
+  color: #777;
 }
 .w-input:focus,
 .w-select:focus {
-  border-color: rgba(82, 168, 236, 0.8);
+  border-color: #2e3880;
   outline: 0;
 }
 .w-input[disabled],
@@ -734,6 +741,8 @@ textarea.w-select {
 @media screen and (max-width: 479px) {
   .w-container {
     max-width: none;
+    height:100%;
+    overflow: scroll;
   }
   .w-hidden-main {
     display: inherit !important;
@@ -1063,7 +1072,7 @@ textarea.w-select {
   position: relative;
   vertical-align: top;
   text-decoration: none;
-  color: #222;
+  color: #a3acde;
   padding: 20px;
   text-align: left;
   margin-left: auto;
@@ -1094,9 +1103,10 @@ textarea.w-select {
 }
 .w-dropdown-list {
   position: absolute;
-  background: #f2f2f2;
+  background: #1d244a;
   display: none;
   min-width: 100%;
+  padding-bottom: .5rem;
 }
 .w-dropdown-list.w--open {
   display: block;
@@ -1106,7 +1116,7 @@ textarea.w-select {
   display: block;
 }
 .w-dropdown-link.w--current {
-  color: #339ce1;
+  color: #fff;
 }
 .w-nav[data-collapse="all"] .w-dropdown,
 .w-nav[data-collapse="all"] .w-dropdown-toggle {
@@ -1453,28 +1463,41 @@ textarea.w-select {
   clear: both;
 }
 .w-nav-brand {
-  position: relative;
-  float: left;
+  display:inline-block;
+  width: 50%;
+  position:relative;
+  float:left;
   text-decoration: none;
-  color: #222;
+  color: #fff;
+}
+.w-nav-brand a:hover {
+  text-decoration: none;
+}
+.swap-hero-logo {
+  max-width: 15rem;
+  height: auto;
+  margin: 1rem 0;
+  padding: 0;
 }
 .w-nav-link {
   position: relative;
-  display: inline-block;
+  display: inline;
   vertical-align: top;
   text-decoration: none;
-  color: #222;
   padding: 20px;
   text-align: left;
   margin-left: auto;
   margin-right: auto;
 }
 .w-nav-link.w--current {
-  color: #339ce1;
+  color: #6d70ff;
 }
 .w-nav-menu {
-  position: relative;
-  float: right;
+  display:inline-block;
+  width: 50%;
+  float:right;
+  text-align:right;
+  position:relative;
 }
 .w--nav-menu-open {
   display: block !important;
@@ -1482,9 +1505,10 @@ textarea.w-select {
   top: 100%;
   left: 0;
   right: 0;
-  background: #999;
-  text-align: center;
+  background: #151934;
+  text-align: left;
   overflow: visible;
+  width: 100%;
   min-width: 200px;
 }
 .w--nav-link-open {
@@ -1522,8 +1546,8 @@ textarea.w-select {
   top: 0;
 }
 .w-nav-button {
-  position: relative;
-  float: right;
+  position: absolute;
+  right:1rem;
   padding: 18px;
   font-size: 24px;
   display: none;
@@ -1536,7 +1560,7 @@ textarea.w-select {
   user-select: none;
 }
 .w-nav-button.w--open {
-  background-color: #999;
+  background-color: none;
   color: white;
 }
 .w-nav[data-collapse="all"] .w-nav-menu {
@@ -1587,17 +1611,10 @@ textarea.w-select {
   position: relative;
 }
 .w-tab-link {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  text-decoration: none;
-  padding: 8px 30px;
-  text-align: left;
-  cursor: pointer;
-  background-color: #E8E8E8;
+  margin:.5rem .5rem;
 }
 .w-tab-link.w--current {
-  background-color: #BCD3F3;
+  
 }
 .w-tab-content {
   position: relative;
@@ -1654,3 +1671,5 @@ textarea.w-select {
   padding: 10px;
   background-color: #ffdede;
 }
+
+

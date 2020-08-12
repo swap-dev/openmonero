@@ -296,7 +296,7 @@ thinwalletCtrls.controller('SendCoinsCtrl', function($scope, $http, $q, AccountS
                 });
                 return
             }
-            // xmr address (incl subaddresses):
+            // xwp address (incl subaddresses):
             try {
                 // verify that the address is valid
                 coreBridge_instance.decode_address(target.address, config.nettype);
@@ -309,7 +309,7 @@ thinwalletCtrls.controller('SendCoinsCtrl', function($scope, $http, $q, AccountS
             function sendTo(target_address, amount, domain/*may be null*/)
             {
                 const mixin = 10; // mandatory fixed mixin for v8 Monero fork
-                let statusUpdate_messageBase = sweeping ? `Sending wallet balance…` : `Sending ${amount} XMR…`
+                let statusUpdate_messageBase = sweeping ? `Sending wallet balance…` : `Sending ${amount} XWP…`
                 function _configureWith_statusUpdate(str, code)
                 {
                     console.log("Step:", str)

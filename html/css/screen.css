@@ -23,6 +23,7 @@ nav,
 section,
 summary {
   display: block;
+  word-wrap: break-word;
 }
 
 /**
@@ -84,6 +85,7 @@ html {
 /* line 80, ../sass/_normalize.scss */
 body {
   margin: 0;
+  background-color: #151933;
 }
 
 /* ==========================================================================
@@ -95,6 +97,7 @@ body {
 /* line 92, ../sass/_normalize.scss */
 a {
   background: transparent;
+  text-decoration:none;
 }
 
 /**
@@ -109,8 +112,10 @@ a:focus {
  * Improve readability when focused and also mouse hovered in all browsers.
  */
 /* line 108, ../sass/_normalize.scss */
+a,
 a:active,
-a:hover {
+a:hover,
+a:visited {
   outline: 0;
 }
 
@@ -123,7 +128,7 @@ a:hover {
  */
 /* line 122, ../sass/_normalize.scss */
 h1 {
-  font-size: 2em;
+  font-size: 1.5rem;
   margin: 0.67em 0;
 }
 
@@ -433,7 +438,7 @@ table {
   margin-left: 80px;
   padding: 10px 40px 25px;
   border-radius: 2px;
-  background-color: white;
+  background-color: #1d244a;
 }
 
 /* line 18, ../sass/screen.scss */
@@ -467,6 +472,6 @@ table {
 
 /* line 47, ../sass/screen.scss */
 .account-catchup-alert .w-form-done {
-  background-color: #5093eb;
+  background-color: #6d70ff;
   margin-top: 20px;
 }
