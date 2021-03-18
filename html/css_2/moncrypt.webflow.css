@@ -116,7 +116,7 @@ p {
   text-align: center;
 }
 .graph {
-  position:relative;
+  position: relative;
   width: 100%;
 }
 .graph img {
@@ -127,7 +127,7 @@ p {
 }
 .subhead-text {
   display: block;
-  margin-top:1rem;
+  margin-top: 1rem;
   margin-bottom: 30px;
   padding-right: 0px;
   padding-left: 0px;
@@ -151,12 +151,12 @@ p {
   color: #a3acde;
 }
 .login-link {
-  text-decoration:none;
-  color:#a3acde;
+  text-decoration: none;
+  color: #a3acde;
   overflow-wrap: break-word;
 }
 .login-link:hover {
-  color:#a3acde;
+  color: #a3acde;
 }
 .login-link.steps {
   color: #a3acde;
@@ -228,8 +228,8 @@ p {
   font-family: "Lato", sans-serif;
 }
 .network-style {
-  color:#6d70ff;
-  opacity: .8;
+  color: #6d70ff;
+  opacity: 0.8;
 }
 .nav-link {
   display: inline-block;
@@ -246,11 +246,18 @@ p {
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
-  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -webkit-transition: color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
   background-color: transparent;
   background-image: none;
   color: #a3acde;
@@ -286,12 +293,19 @@ p {
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
-  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  margin: 1rem .5rem 0rem;
+  -webkit-transition: color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  margin: 1rem 0.5rem 0rem;
 }
 .nav-link.login-secondary {
   background-color: transparent;
@@ -313,6 +327,12 @@ p {
   text-align: center;
   color: #a3acde;
   word-wrap: break-word;
+}
+.footer-section a {
+  color: #a3acde;
+}
+.footer-section a:hover {
+  text-decoration: underline;
 }
 .copyleft {
   height: 1em;
@@ -370,8 +390,8 @@ p {
   margin-right: 0px;
   margin-left: 0px;
   padding: 60px 15px;
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
   opacity: 1;
   color: black;
 }
@@ -418,7 +438,12 @@ p {
   font-size: 12px;
 }
 .gradient-icon {
-  background: -webkit-linear-gradient(45deg, rgba(165,97,229,1) 0%,rgba(103,122,243,1) 50%,rgba(126,222,238,1) 100%);
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(165, 97, 229, 1) 0%,
+    rgba(103, 122, 243, 1) 50%,
+    rgba(126, 222, 238, 1) 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: initial;
@@ -438,15 +463,22 @@ p {
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
-  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -webkit-transition: color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
   color: #a3acde;
   background-color: transparent;
   background-image: none;
-  margin:1 .5rem;
+  margin: 1 0.5rem;
 }
 .tab-link-1:hover {
   background-color: #2e3880;
@@ -471,11 +503,18 @@ p {
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
-  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -webkit-transition: color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
   color: #a3acde;
   background-color: transparent;
   background-image: none;
@@ -490,7 +529,7 @@ p {
 }
 .tabs-style {
   margin-top: 10px;
-  margin-bottom:10px;
+  margin-bottom: 10px;
   text-align: center;
 }
 .login-btn {
@@ -508,13 +547,30 @@ p {
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
-  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  background-image: -webkit-linear-gradient(45deg, rgba(165,97,229,1) 0%,rgba(103,122,243,1) 50%,rgba(126,222,238,1) 100%);
-  background-image: linear-gradient(45deg, rgba(165,97,229,1) 0%,rgba(103,122,243,1) 50%,rgba(126,222,238,1) 100%);
+  -webkit-transition: color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(165, 97, 229, 1) 0%,
+    rgba(103, 122, 243, 1) 50%,
+    rgba(126, 222, 238, 1) 100%
+  );
+  background-image: linear-gradient(
+    45deg,
+    rgba(165, 97, 229, 1) 0%,
+    rgba(103, 122, 243, 1) 50%,
+    rgba(126, 222, 238, 1) 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a561e5', endColorstr='#7edeee',GradientType=1 );
   background-repeat: repeat-x;
   color: #fff;
@@ -522,7 +578,7 @@ p {
   -webkit-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease;
-  margin:.5rem .5rem;
+  margin: 0.5rem 0.5rem;
 }
 .login-btn:hover {
   color: #fff;
@@ -785,7 +841,7 @@ p {
   font-weight: 400;
 }
 .middle-text-address {
-  font-size: .9rem;
+  font-size: 0.9rem;
   line-height: 1.3rem;
 }
 .middle-text.receive {
@@ -822,7 +878,7 @@ p {
   color: #fff;
   text-align: center;
 }
-.head-modal a:link, 
+.head-modal a:link,
 .head-modal a:hover,
 .head-modal a:visited,
 .head-modal a:active {
@@ -908,7 +964,7 @@ p {
   /*font-family: "Lato", sans-serif;*/
   font-family: Andale Mono, monospace;
   color: #a3acde;
-  font-size: .7rem;
+  font-size: 0.7rem;
   font-weight: 400;
 }
 .transaction-address.transaction-page {
@@ -919,7 +975,7 @@ p {
   /*font-family: "Lato", sans-serif;*/
   font-family: Andale Mono, monospace;
   color: #a3acde;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 .transaction-detail.transaction-left {
   padding-left: 15px;
@@ -999,13 +1055,30 @@ p {
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
-  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  background-image: -webkit-linear-gradient(45deg, rgba(165,97,229,1) 0%,rgba(103,122,243,1) 50%,rgba(126,222,238,1) 100%);
-  background-image: linear-gradient(45deg, rgba(165,97,229,1) 0%,rgba(103,122,243,1) 50%,rgba(126,222,238,1) 100%);
+  -webkit-transition: color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(165, 97, 229, 1) 0%,
+    rgba(103, 122, 243, 1) 50%,
+    rgba(126, 222, 238, 1) 100%
+  );
+  background-image: linear-gradient(
+    45deg,
+    rgba(165, 97, 229, 1) 0%,
+    rgba(103, 122, 243, 1) 50%,
+    rgba(126, 222, 238, 1) 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a561e5', endColorstr='#7edeee',GradientType=1 );
   background-repeat: repeat-x;
   color: #fff;
@@ -1034,13 +1107,30 @@ p {
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
-  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  background-image: -webkit-linear-gradient(45deg, rgba(165,97,229,1) 0%,rgba(103,122,243,1) 50%,rgba(126,222,238,1) 100%);
-  background-image: linear-gradient(45deg, rgba(165,97,229,1) 0%,rgba(103,122,243,1) 50%,rgba(126,222,238,1) 100%);
+  -webkit-transition: color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(165, 97, 229, 1) 0%,
+    rgba(103, 122, 243, 1) 50%,
+    rgba(126, 222, 238, 1) 100%
+  );
+  background-image: linear-gradient(
+    45deg,
+    rgba(165, 97, 229, 1) 0%,
+    rgba(103, 122, 243, 1) 50%,
+    rgba(126, 222, 238, 1) 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a561e5', endColorstr='#7edeee',GradientType=1 );
   background-repeat: repeat-x;
   color: #fff;
@@ -1068,7 +1158,7 @@ p {
   border-radius: 3px;
   background-color: #45dea1;
 }
-.send-btn {  
+.send-btn {
   display: block;
   font-weight: 400;
   text-align: center;
@@ -1083,13 +1173,30 @@ p {
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
-  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  background-image: -webkit-linear-gradient(45deg, rgba(165,97,229,1) 0%,rgba(103,122,243,1) 50%,rgba(126,222,238,1) 100%);
-  background-image: linear-gradient(45deg, rgba(165,97,229,1) 0%,rgba(103,122,243,1) 50%,rgba(126,222,238,1) 100%);
+  -webkit-transition: color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(165, 97, 229, 1) 0%,
+    rgba(103, 122, 243, 1) 50%,
+    rgba(126, 222, 238, 1) 100%
+  );
+  background-image: linear-gradient(
+    45deg,
+    rgba(165, 97, 229, 1) 0%,
+    rgba(103, 122, 243, 1) 50%,
+    rgba(126, 222, 238, 1) 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a561e5', endColorstr='#7edeee',GradientType=1 );
   background-repeat: repeat-x;
   color: #fff;
@@ -1161,15 +1268,22 @@ p {
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
-  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -webkit-transition: color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
   color: #a3acde;
   background-color: transparent;
   background-image: none;
-  margin:1 .5rem;
+  margin: 1 0.5rem;
 }
 .table-btn:hover {
   background-color: #2e3880;
@@ -1208,15 +1322,22 @@ p {
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
-  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -webkit-transition: color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
   background-color: transparent;
   background-image: none;
   border-color: #2e3880;
-  margin: .5rem .5rem;
+  margin: 0.5rem 0.5rem;
 }
 .lower-nav-link:hover {
   color: #fff;
@@ -1254,11 +1375,18 @@ p {
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
-  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -webkit-transition: color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
   background-color: transparent;
   background-image: none;
   color: #a3acde;
@@ -1310,7 +1438,7 @@ p {
 .dropdown-rounded.w--open {
   display: block;
   margin: 0.125rem 0 0;
-  padding:0.5rem 0;
+  padding: 0.5rem 0;
   border: 2px solid #1d244a;
   border-radius: 3px;
   background-color: #1d244a;
@@ -1339,8 +1467,8 @@ p {
   margin-right: 0px;
   margin-left: 0px;
   padding: 60px 15px;
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
   opacity: 1;
   color: black;
 }
@@ -1377,8 +1505,8 @@ p {
   margin-right: 0px;
   margin-left: 0px;
   padding: 60px 15px;
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
   opacity: 1;
   color: black;
 }
@@ -1418,13 +1546,30 @@ p {
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
-  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  background-image: -webkit-linear-gradient(45deg, rgba(165,97,229,1) 0%,rgba(103,122,243,1) 50%,rgba(126,222,238,1) 100%);
-  background-image: linear-gradient(45deg, rgba(165,97,229,1) 0%,rgba(103,122,243,1) 50%,rgba(126,222,238,1) 100%);
+  -webkit-transition: color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(165, 97, 229, 1) 0%,
+    rgba(103, 122, 243, 1) 50%,
+    rgba(126, 222, 238, 1) 100%
+  );
+  background-image: linear-gradient(
+    45deg,
+    rgba(165, 97, 229, 1) 0%,
+    rgba(103, 122, 243, 1) 50%,
+    rgba(126, 222, 238, 1) 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a561e5', endColorstr='#7edeee',GradientType=1 );
   background-repeat: repeat-x;
   color: #fff;
@@ -1432,7 +1577,7 @@ p {
   -webkit-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease;
-  margin:2rem .5rem 0;
+  margin: 2rem 0.5rem 0;
 }
 .create-account-btn:hover {
   color: #fff;
@@ -1509,12 +1654,12 @@ p {
   font-size: 11px;
   font-weight: 400;
   text-align: left;
--ms-word-break: break-all;
+  -ms-word-break: break-all;
   word-break: break-all;
   word-break: break-word;
--webkit-hyphens: auto;
-   -moz-hyphens: auto;
-        hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
 }
 .support-text {
   display: inline-block;
@@ -1620,7 +1765,6 @@ p {
     line-height: 3rem;
   }
   .create-account-btn {
-
   }
   .home-subhead {
     margin-top: 9px;
@@ -1713,8 +1857,8 @@ p {
   .login-btn.modals {
     padding-right: 93px;
     padding-left: 93px;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 15rem;
   }
   .footer-link {
@@ -1773,7 +1917,7 @@ p {
     line-height: 22px;
   }
   .middle-text-address {
-    font-size: .9rem;
+    font-size: 0.9rem;
     line-height: 1rem;
   }
   .middle-div.send {
@@ -1843,7 +1987,7 @@ p {
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 0.25rem;
     color: #a3acde;
-  }  
+  }
   .menu-btn {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
@@ -1907,7 +2051,7 @@ p {
   }
   .move-text-div {
     padding-left: 0px;
-    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   }
   .responsive-column {
     padding-right: 0px;
@@ -1943,7 +2087,7 @@ p {
     margin-right: 115px;
     margin-left: 42px;
     margin-top: 10px;
-    margin-bottom:10px;
+    margin-bottom: 10px;
     border: 1px solid #5093eb;
   }
   .nav-menu {
@@ -2037,7 +2181,7 @@ p {
     line-height: 24px;
   }
   .middle-text-address {
-    font-size: .9rem;
+    font-size: 0.9rem;
     line-height: 1rem;
   }
   .head-modal {
@@ -2140,7 +2284,6 @@ p {
     padding-bottom: 40px;
   }
   .create-account-btn {
-
   }
   .mid-div {
     margin-bottom: 30px;
@@ -2168,49 +2311,55 @@ p {
 
 @font-face {
   font-family: '"Lato"';
-  src: url('../fonts/"Lato"-Regular.otf') format('opentype');
+  src: url('../fonts/"Lato"-Regular.otf') format("opentype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: '"Lato"';
-  src: url('../fonts/"Lato"-Black.otf') format('opentype');
+  src: url('../fonts/"Lato"-Black.otf') format("opentype");
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
   font-family: '"Lato"';
-  src: url('../fonts/"Lato"-Extrabold.otf') format('opentype');
+  src: url('../fonts/"Lato"-Extrabold.otf') format("opentype");
   font-weight: 900;
   font-style: normal;
 }
 @font-face {
   font-family: '"Lato"';
-  src: url('../fonts/"Lato"-Bold.otf') format('opentype');
+  src: url('../fonts/"Lato"-Bold.otf') format("opentype");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: '"Lato"';
-  src: url('../fonts/"Lato"-Semibold.otf') format('opentype');
+  src: url('../fonts/"Lato"-Semibold.otf') format("opentype");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: '"Lato"';
-  src: url('../fonts/"Lato"-Light.otf') format('opentype');
+  src: url('../fonts/"Lato"-Light.otf') format("opentype");
   font-weight: 200;
   font-style: normal;
 }
 
 @-moz-document url-prefix() {
-  .form-layout, x:-moz-any-link, x:default {
+  .form-layout,
+  x:-moz-any-link,
+  x:default {
     height: 58px;
   }
-  .send-text-box, x:-moz-any-link, x:default {
+  .send-text-box,
+  x:-moz-any-link,
+  x:default {
     height: 58px;
   }
-  .w-select, x:-moz-any-link, x:default {
+  .w-select,
+  x:-moz-any-link,
+  x:default {
     height: 50px;
   }
 }
