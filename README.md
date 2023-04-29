@@ -27,15 +27,6 @@ to MyMonero. They include:
  - legacy address + payment_id system replaced with integrated addresses for better privacy.
  - free, time based imports of recent transactions added.
 
-## Live stagenet version
-
-- [http://139.162.60.17:81](http://139.162.60.17:81)
-- [http://139.162.60.17:8100](http://139.162.60.17:8100) - MyMonero frontend
-
-This is OpenMonero running on stagnet network. You can use it to play around with it.
-Please note that the live version is running on cheap VPS, which may result in
-performance issues.
-
 
 ## Current development version
 
